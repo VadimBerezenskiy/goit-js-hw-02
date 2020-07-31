@@ -1,10 +1,8 @@
 const formatString = function (string) {
   let limitSymbols = 40;
-  let correctedSting;
   console.log(string);
   if (string.length > limitSymbols) {
-    correctedSting = string.substr(0, 40) + '...';
-    return correctedSting;
+    return string.substr(0, 40) + '...';
   } else {
     return string;
   }

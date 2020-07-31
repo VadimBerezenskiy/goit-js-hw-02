@@ -1,11 +1,9 @@
 let input;
 const numbers = [];
 let total = 0;
-let cancel;
 do {
   input = prompt('Введите число!');
   if (input === null) {
-    input = cancel;
     break;
   }
   input = Number(input);
@@ -15,7 +13,7 @@ do {
   }
   numbers.push(input);
   console.log(numbers);
-} while (input !== cancel);
+} while (input !== null);
 function sumNumbers(numbers) {
   for (let i = 0; i < numbers.length; i++) {
     total += numbers[i];
